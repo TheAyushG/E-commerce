@@ -40,7 +40,7 @@ function Cart() {
   }, [cartItems])
 
 
-  const shipping = parseInt(0);
+  const shipping = parseInt(100);
   const grandTotal = shipping + totalAmount;
   // console.log(grandTotal);
 
