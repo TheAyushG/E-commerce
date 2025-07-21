@@ -20,7 +20,7 @@ export default function Modal({ name, address, pincode, phoneNumber, setName, se
                 <button
                     type="button"
                     onClick={openModal}
-                    className="w-full  bg-violet-600 py-2 text-center rounded-lg text-white font-bold ">
+                    className="w-full hover:bg-violet-900 bg-violet-600 hover:text-green-500 py-2 text-center rounded-lg text-white font-bold ">
                     Buy Now
                 </button>
 

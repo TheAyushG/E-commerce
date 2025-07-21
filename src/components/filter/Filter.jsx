@@ -9,7 +9,7 @@ function Filter() {
     return (
         <div>
            <div className=' container mx-auto px-4 mt-5 '>
-                <div className="p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200"
+                <div className="p-5 rounded-lg bg-gray-400 drop-shadow-xl border border-gray-200"
                     style={{
                         backgroundColor: mode === 'dark' ? '#282c34' : '',
                         color: mode === 'dark' ? 'white' : '',
@@ -31,11 +31,18 @@ function Filter() {
                     </div>
 
                     <div className="flex items-center justify-between mt-4"> 
-                        <p className="font-medium">
+                        <p className="font-medium px-4 py-2 bg-zinc-400 hover:bg-zinc-500 text-gray-900 text-sm font-medium rounded-md">
                             Filters
                         </p>
                         
-                        <button className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                        <button className="px-4 py-2 bg-zinc-400 hover:bg-zinc-500 text-gray-900 text-sm font-medium rounded-md"
+                          style={{ color: mode === 'dark' ? 'white' : '' }}
+                          onClick={() => {
+                            setSearchkey('');
+                            setFilterType('');
+                            setFilterPrice('');
+                          }}
+                        >
                             Reset Filter
                         </button>
                     </div>
